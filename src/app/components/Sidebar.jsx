@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 
 export default function Sidebar({ sidebaropen, onStateChange }) {
@@ -8,7 +7,7 @@ export default function Sidebar({ sidebaropen, onStateChange }) {
   return (
     <>
       <div
-        className={`transition-all duration-500 ease-in-out${
+        className={`${
           sidebaropen === "open" ? " w-[65vw] block" : sidebarClass
         } absolute h-screen bg-white z-10`}
       >
@@ -27,15 +26,15 @@ export default function Sidebar({ sidebaropen, onStateChange }) {
           />
         </button>
         <div className=" flex flex-col gap-5 ml-6 mt-14 text-black font-bold text-xl">
-          <Link href={"/"}>Collections</Link>
+          <Link href={"/collections"}>Collections</Link>
 
-          <Link href={"/"}>Men</Link>
+          <Link href={"/men"}>Men</Link>
 
-          <Link href={"/"}>Women</Link>
+          <Link href={"/women"}>Women</Link>
 
-          <Link href={"/"}>About</Link>
+          <Link href={"/about"}>About</Link>
 
-          <Link href={"/"}>Contact</Link>
+          <Link href={"/contact"}>Contact</Link>
         </div>
       </div>
     </>

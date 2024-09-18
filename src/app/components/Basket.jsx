@@ -15,7 +15,7 @@ export default function Basket({ basket }) {
   return (
     <>
       <div
-        className={`${open_or_close} absolute  bg-white  px-5 py-4 rounded-lg w-[96vw]  h-56 z-10 left-[50%] -translate-x-[50%]   top-20`}
+        className={`${open_or_close} absolute md:w-[350px] text-gray-500  bg-white md:translate-x-96 shadow-2xl  px-5 py-4 rounded-lg w-[96vw]  h-56 z-10 left-[50%] -translate-x-[50%]   top-20`}
       >
         <div className=" font-bold ">Cart</div>
         <hr className=" mt-5 " />
@@ -66,7 +66,7 @@ export default function Basket({ basket }) {
                   </button>
                 </div>
               </div>
-              <div className=" w-full bg-[#ff7d1a] py-3 rounded-lg mt-3">
+              <div className=" w-full bg-[#ff7d1a] text-black py-3 rounded-lg mt-3">
                 <button className=" w-full font-bold ">Checkout</button>
               </div>
             </div>

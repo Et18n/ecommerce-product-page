@@ -21,9 +21,10 @@ export default function Nav() {
       <Sidebar sidebaropen={sidebaropen} onStateChange={setSidebar} />
 
       <Basket basket={basket} />
-      <nav className="flex flex-row justify-between w-full h-10 py-9 px-4 items-center">
+      <nav className=" flex flex-row justify-between w-full h-10 py-9 px-4 items-center">
         <div className="flex flex-row gap-4 ">
           <button
+            className="md:hidden"
             onClick={() => {
               setSidebar("open");
             }}
@@ -45,6 +46,23 @@ export default function Nav() {
               alt="logo"
             />
           </Link>
+          <div className="hidden [&>*]:border-b-2 [&>*]:transition [&>*]:ease-in-out [&>*]:duration-[500ms] [&>*]:border-b-white  md:flex flex-row gap-5 ml-10 ">
+            <div className=" hover:border-b-orange-500  hover:border-b-2">
+              <Link href={"/collections"}>Collections</Link>
+            </div>
+            <div className=" hover:border-b-orange-500   hover:border-b-2">
+              <Link href={"/men"}>Men</Link>
+            </div>
+            <div className=" hover:border-b-orange-500  hover:border-b-2">
+              <Link href={"/women"}>Women</Link>
+            </div>
+            <div className=" hover:border-b-orange-500  hover:border-b-2">
+              <Link href={"/about"}>About</Link>
+            </div>
+            <div className=" hover:border-b-orange-500  hover:border-b-2">
+              <Link href={"/contact"}>Contact</Link>
+            </div>
+          </div>
         </div>
         <div className="flex flex-row gap-4">
           <div className=" h-full relative ">
@@ -73,9 +91,9 @@ export default function Nav() {
           <button>
             <Image
               src={"/images/image-avatar.png"}
-              width={10}
-              height={10}
-              className="h-6 w-6"
+              width={50}
+              height={50}
+              className="h-6 w-6 md:h-8 md:w-8"
               alt="avatar"
             />
           </button>

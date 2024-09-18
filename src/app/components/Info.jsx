@@ -3,7 +3,7 @@ import Stack from "./Stack";
 export default function Info() {
   return (
     <>
-      <div className="m-5">
+      <div className="m-5 md:w-[500px] md:place-self-center md:-translate-y-10 md:-translate-x-32 md:mt-24 ">
         <div className="text-[#68707d] text-sm font-bold  tracking-widest">
           SNEAKER COMPANY
         </div>

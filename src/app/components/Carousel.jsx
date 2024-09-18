@@ -32,8 +32,9 @@ export default function Carousel() {
     }
     setinx(index);
   };
+  
   return (
-    <div className="relative">
+    <div className=" md:hidden relative">
       <button
         className="absolute left-4 bg-white px-[11px] py-2 rounded-full align-middle top-[50%] -translate-y-[50%] "
         onClick={() => {
