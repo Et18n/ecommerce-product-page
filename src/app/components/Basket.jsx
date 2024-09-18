@@ -62,6 +62,7 @@ export default function Basket({ basket }) {
                       src={"/images/icon-delete.svg"}
                       width={15}
                       height={15}
+                      alt="delete_btn"
                     />
                   </button>
                 </div>
